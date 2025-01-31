@@ -1,10 +1,11 @@
 module github.com/mosescode1/HNG-Task-0.git
 
-go 1.23.5
+go 1.23.4
+
+require github.com/gofiber/fiber/v2 v2.52.6
 
 require (
 	github.com/andybalholm/brotli v1.1.0 // indirect
-	github.com/gofiber/fiber/v2 v2.52.6 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/klauspost/compress v1.17.9 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
