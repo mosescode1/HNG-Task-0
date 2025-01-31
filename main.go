@@ -5,11 +5,15 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 )
 
 func main() {
 
 	app := fiber.New()
+
+	app.Use(cors.New())
+
 	now := time.Now()
 
 	isoformat := now.Format("2006-01-02T15:04:05Z")
