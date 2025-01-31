@@ -12,7 +12,7 @@ func main() {
 	app := fiber.New()
 	now := time.Now()
 
-	isoformat := now.Format(time.RFC3339)
+	isoformat := now.Format("2006-01-02T15:04:05Z")
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.Status(200).JSON(fiber.Map{
